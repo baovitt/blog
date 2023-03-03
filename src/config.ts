@@ -1,6 +1,7 @@
 import type { SocialObjects } from "./types";
 
 export const SITE = {
+  site: "not assigned",
   author: "Bradly Ovitt",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "Bradly Ovitt's Blog",
