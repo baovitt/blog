@@ -1,6 +1,6 @@
 ---
 author: Bradly Ovitt
-pubDatetime: 2023-03-6T22:05:24Z
+pubDatetime: 2023-03-04T22:04:31Z
 title: "Being a Good Engineer"
 postSlug: being-a-good-engineer
 featured: false

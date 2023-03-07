@@ -1,6 +1,6 @@
 ---
 author: Bradly Ovitt
-pubDatetime: 2023-03-05T19:20:17Z
+pubDatetime: 2023-03-04T19:19:17Z
 title: "Designing a Programming Language Part 4: Strutting my Stuff"
 postSlug: programming-language-design-part4
 featured: false
