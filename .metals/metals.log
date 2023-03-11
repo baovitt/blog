@@ -69,3 +69,7 @@ WARNING: Unmatched cancel notification for request id 880
 2023.03.10 18:15:26 WARN  no build target for: /home/brad/blog/src/content/blog/l.scala
 2023.03.10 18:15:29 WARN  no build target for: /home/brad/blog/src/content/blog/l.scala
 2023.03.10 18:16:48 WARN  no build target for: /home/brad/blog/src/content/blog/l.scala
+Mar 10, 2023 7:46:43 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 10, 2023 7:46:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
