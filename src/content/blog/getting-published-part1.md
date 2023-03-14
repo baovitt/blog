@@ -18,41 +18,10 @@ But, before I do anything, I need an idea.
 
 ## The Idea:
 
-I've find myself writing a compiler for a programming language I designed, and having never built any compilers before, I trying to be very careful not to shoot myself in the foot, fully exploiting my skills in other areas.
+The paper I want to write will be called "analyzing forms of programs" or something related to it. 
 
-The part that scares me the most is the optimizer. I can write a parser with ANTLR4 and I can implement a static analyzer and type checker fairly easily as well. And, for my own sake, I want to implement a micropass optimizer. But, I also want it to be fast.
+The idea is that programs are interpretations of logics to computer hardware just like human language is an interpretation of some logics in relation to our senses and mind.
 
-I can utilize recursion schemes to write disparate components of a type checker and optimizer and assemble them into a single compiler pass.
+If you haven't read my post on relational parametricity, it's kind of a non-starter. You can find it here: bradly-ovitt-blog.netlify.app/posts/relational-parametricity. The idea is that we can represent programming languages as a reflexive graph where each node is a type and each edge is a function between types. 
 
-I want my paper to discuss this, while exposing a novel architecture for optimization application, while I'll next.
-
-## E-Graphs
-
-An equality is a data structure that allows us to represent equivalency transformations over some language. In essence it's a data structure that enables equality saturation over some language.
-
-For a better explanation of equality graphs than I could ever give first hand, check out egg: https://egraphs-good.github.io/
-
-Equality graphs enables us to create a rich graph structure encoding a list of transformations over a single program.
-
-Our equality graph would consists of:
-- A set `P` of all programs, as a type
-- A set `O` of all optimizations
-- A function `O -> R` that maps an optimization to its source program.
-- A function `O -> R` that maps an optimization to its target program.
-- A function `R -> O` that maps each program to its reflexive optimization
-
-Equality Graphs graphs also typically contain sets of grouped nodes, where equivalent operators are in the same set, connected to values that make them equivalent.
-
-## Equality Graphs as Reflexive Graphs
-
-Let's think about equality graphs and what we're demanding of them.
-
-## Representing E-Graphs as Change Structures
-
-A change structure is another data structure, but it's more idiomatic to functional programming, something I advocate for strongly.
-
-### Relational Parametricity:
-
-A logical relation between two instances of the same type can be defined by looking at the logical structure of the two instances, which we can understand as the logical constructions we used to obtain the instance.
-
-We can relate logical structures to capture change-of-representation in some type.
+We're gonna do things slightly differently. We want to represent each program as a type. Our type will be the type of all types and our functions will 
